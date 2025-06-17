@@ -1,14 +1,13 @@
-/* Reset básico */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0d1117;
+  background: #0d1117;
   color: #c9d1d9;
   line-height: 1.6;
 }
@@ -16,234 +15,144 @@ body {
 /* Navbar */
 .header {
   position: fixed;
-  width: 100%;
-  top: 0;
+  top: 0; width: 100%;
   background: #161b22;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 50px; z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
-
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.8rem; font-weight: bold;
 }
-
-.logo span {
-  color: #58a6ff;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-}
-
+.logo span { color: #58a6ff; }
+.nav { display: flex; align-items: center; }
 .nav a {
   margin-left: 30px;
-  color: #c9d1d9;
-  text-decoration: none;
+  color: #c9d1d9; text-decoration: none;
   transition: color 0.3s;
 }
+.nav a:hover { color: #58a6ff; }
 
-.nav a:hover {
-  color: #58a6ff;
-}
-
-/* Botão Hamburguer */
+/* Hamburger */
 .hamburger {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 6px;
+  display: none; cursor: pointer;
+  flex-direction: column; gap: 5px;
 }
-
 .hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #c9d1d9;
-  border-radius: 3px;
-  transition: all 0.3s ease;
+  width: 25px; height: 3px;
+  background: #c9d1d9; border-radius: 3px;
+  transition: transform 0.3s, opacity 0.3s;
 }
-
-/* Animação do menu aberto */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
+.hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Menu responsivo */
-@media (max-width: 768px) {
-  .nav {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: #161b22;
-    flex-direction: column;
-    width: 200px;
-    height: 0;
-    overflow: hidden;
-    border-radius: 10px 0 0 10px;
-    transition: height 0.3s ease;
-  }
-
-  .nav.open {
-    height: 220px;
-  }
-
-  .nav a {
-    margin: 15px 0;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
-
-/* Seções */
+/* Sections */
 section {
-  padding: 120px 50px;
-  min-height: 100vh;
+  padding: 120px 50px; min-height: 100vh;
 }
-
-h1, h2 {
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-p {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* Home */
 .home {
   background: linear-gradient(120deg, #0d1117, #161b22);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   text-align: center;
 }
-
 .home h1 {
   font-size: 3rem;
 }
-
-.home .highlight {
-  color: #58a6ff;
+.highlight { color: #58a6ff; }
+.btn {
+  margin-top: 20px; padding: 12px 30px;
+  background: #58a6ff; color: #fff; border: none;
+  border-radius: 30px; cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
 }
+.btn:hover { background: #1f6feb; transform: scale(1.05); }
 
-.home .btn {
+/* About */
+.about h2 {
+  font-size: 2.5rem; text-align: center; margin-bottom: 20px;
+}
+.about p { max-width: 700px; margin: 10px auto; text-align: center; }
+.skills-list {
+  max-width: 700px; margin: 15px auto;
+  list-style: inside; text-align: left;
+}
+.skills {
+  display: flex; flex-wrap: wrap; justify-content: center;
   margin-top: 20px;
-  padding: 12px 30px;
-  border: none;
-  background: #58a6ff;
-  color: white;
-  cursor: pointer;
-  border-radius: 30px;
-  transition: background 0.3s, transform 0.3s;
 }
-
-.home .btn:hover {
-  background: #1f6feb;
-  transform: scale(1.05);
-}
-
-/* Sobre */
-.about .skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-}
-
 .skill {
-  background: #21262d;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 20px;
+  background: #21262d; padding: 10px 20px;
+  margin: 8px; border-radius: 20px;
   transition: background 0.3s, transform 0.3s;
 }
-
 .skill:hover {
-  background: #30363d;
-  transform: scale(1.05);
+  background: #30363d; transform: scale(1.05);
 }
 
-/* Projetos */
+/* Projects */
+.projects h2 {
+  font-size: 2.5rem; text-align: center; margin-bottom: 20px;
+}
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px; margin-top: 20px;
 }
-
 .project-card {
-  background: #21262d;
-  padding: 20px;
-  border-radius: 15px;
-  transition: transform 0.3s, background 0.3s;
+  background: #21262d; padding: 20px;
+  border-radius: 15px; transition: transform 0.3s, background 0.3s;
 }
-
 .project-card:hover {
   transform: translateY(-10px);
   background: #30363d;
 }
+.project-card h3 { color: #58a6ff; margin-bottom: 10px; }
 
-.project-card h3 {
-  margin-bottom: 10px;
-  color: #58a6ff;
+/* Contact */
+.contact h2 {
+  font-size: 2.5rem; text-align: center; margin-bottom: 20px;
 }
-
-/* Contato */
-.contact .social {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.contact p { text-align: center; margin-bottom: 15px; }
+.social {
+  display: flex; justify-content: center; gap: 20px;
 }
-
-.contact .social a {
-  margin: 0 15px;
-  color: #58a6ff;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.3s;
+.social a {
+  text-decoration: none; color: #58a6ff;
+  transition: transform 0.3s;
 }
-
-.contact .social a:hover {
-  color: #1f6feb;
-  transform: scale(1.1);
-}
+.social a:hover { transform: scale(1.1); }
 
 /* Footer */
 .footer {
-  text-align: center;
-  padding: 20px;
-  background: #161b22;
-  border-top: 1px solid #21262d;
+  text-align: center; padding: 20px;
+  background: #161b22; border-top: 1px solid #21262d;
 }
 
-/* Animações */
+/* Animations */
 section, .project-card, .skill {
-  opacity: 0;
-  transform: translateY(50px);
+  opacity: 0; transform: translateY(50px);
   transition: all 0.7s ease;
 }
-
 .show {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1; transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header { padding: 15px; flex-direction: column; }
+  .nav {
+    position: absolute; top: 70px; right: 0;
+    background: #161b22; flex-direction: column;
+    width: 200px; height: 0; overflow: hidden;
+    border-radius: 0 0 0 10px;
+    transition: height 0.3s ease;
+  }
+  .nav.open { height: 180px; }
+  .nav a { margin: 12px 0; }
+  .hamburger { display: flex; }
 }
