@@ -8,107 +8,110 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="header">
-    <div class="logo">Natã <span>De Mattos</span></div>
-    <nav class="nav">
-      <a href="#home">Início</a>
-      <a href="#about">Sobre</a>
-      <a href="#projects">Projetos</a>
-      <a href="#contact">Contato</a>
-    </nav>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+<!-- Navbar -->
+<header class="header">
+  <div class="logo">Natã <span>De Mattos</span></div>
+  <nav class="nav">
+    <a href="#home">Início</a>
+    <a href="#about">Sobre</a>
+    <a href="#projects">Projetos</a>
+    <a href="#contact">Contato</a>
+  </nav>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Home -->
+<section id="home" class="home">
+  <div class="content">
+    <h1>Olá, eu sou <span class="highlight">Natã De Mattos</span></h1>
+    <p>Desenvolvedor Full Stack | Criador de Soluções Digitais</p>
+    <button class="btn" id="scrollToProjects">Ver Projetos</button>
+  </div>
+</section>
+
+<!-- Sobre -->
+<section id="about" class="about">
+  <h2>Full Stack Developer | Criador de Soluções Digitais</h2>
+  <p>
+    Sou desenvolvedor full stack, apaixonado por tecnologia e inovação. Atuo no desenvolvimento de sistemas, sites, aplicativos web/mobile e games, entregando soluções modernas, seguras e responsivas. Trabalho com HTML, CSS, JavaScript, Python, C# e SQL, além de frameworks que aceleram o desenvolvimento e garantem alta qualidade.
+  </p>
+  <p>
+    Ao longo da minha trajetória, ajudo empresas e projetos a se digitalizarem, criando interfaces intuitivas, automações inteligentes e plataformas robustas. Acredito que a tecnologia, aliada à criatividade, tem o poder de transformar negócios e impactar vidas.
+  </p>
+  <p><strong>🚀 Minhas principais habilidades incluem:</strong></p>
+  <ul class="skills-list">
+    <li>Desenvolvimento Front‑End (UI/UX responsiva)</li>
+    <li>Criação de APIs e sistemas Back‑End</li>
+    <li>Integrações com bancos de dados relacionais e não relacionais</li>
+    <li>Otimização de processos através de software personalizado</li>
+    <li>Projetos sob medida para clientes e empresas</li>
+  </ul>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Python</div>
+    <div class="skill">C#</div>
+    <div class="skill">SQL</div>
+  </div>
+</section>
+
+<!-- Projetos -->
+<section id="projects" class="projects">
+  <h2>Projetos</h2>
+  <div class="project-grid">
+
+    <!-- Projeto 1 -->
+    <div class="project-card">
+      <h3><strong>Lead Master — Chatbot Inteligente</strong></h3>
+      <p>
+        O Lead Master é um <strong>chatbot inteligente para geração de leads</strong> que coleta informações dos usuários (nome, telefone, idade, email e cidade) e armazena em um <strong>dashboard protegido</strong>. Após o cadastro, o usuário é direcionado diretamente para o <strong>WhatsApp</strong>.
+        O sistema conta com um <strong>dashboard administrativo</strong> com <strong>cards de contagem</strong> e <strong>gráficos dinâmicos</strong> para análise dos leads. Além disso, possui uma <strong>API RESTful</strong> pronta para integração com outros sistemas.
+      </p>
+      <p><strong>Stack Tecnológica:</strong><br>
+        • <strong>Frontend:</strong> HTML, CSS, JavaScript (hospedado no GitHub Pages)<br>
+        • <strong>Backend:</strong> FastAPI (Python) com SQLite — hospedado no Render<br>
+        • <strong>Funcionalidades:</strong> Captura de leads, dashboard com autenticação via token, integração com WhatsApp e gráficos dinâmicos.
+      </p></br>
+      <a href="https://nmdevtch.github.io/LeadMaster/" target="_blank" class="btn">Ver Projeto</a>
     </div>
-  </header>
 
-  <!-- Home -->
-  <section id="home" class="home">
-    <div class="content">
-      <h1>Olá, eu sou <span class="highlight">Natã De Mattos</span></h1>
-      <p>Desenvolvedor Full Stack | Criador de Soluções Digitais</p>
-      <button class="btn" id="scrollToProjects">Ver Projetos</button>
+    <!-- Projeto 2 -->
+    <div class="project-card">
+      <h3>Projeto 2</h3>
+      <p>Descrição do projeto 2.</p>
     </div>
-  </section>
 
-  <!-- Sobre -->
-  <section id="about" class="about">
-    <h2>Full Stack Developer | Criador de Soluções Digitais</h2>
-    <p>
-      Sou desenvolvedor full stack, apaixonado por tecnologia e inovação. Atuo no desenvolvimento de sistemas, sites, aplicativos web/mobile e games, entregando soluções modernas, seguras e responsivas. Trabalho com HTML, CSS, JavaScript, Python, C# e SQL, além de frameworks que aceleram o desenvolvimento e garantem alta qualidade.
-    </p>
-    <p>
-      Ao longo da minha trajetória, ajudo empresas e projetos a se digitalizarem, criando interfaces intuitivas, automações inteligentes e plataformas robustas. Acredito que a tecnologia, aliada à criatividade, tem o poder de transformar negócios e impactar vidas.
-    </p>
-    <p><strong>🚀 Minhas principais habilidades incluem:</strong></p>
-    <ul class="skills-list">
-      <li>Desenvolvimento Front‑End (UI/UX responsiva)</li>
-      <li>Criação de APIs e sistemas Back‑End</li>
-      <li>Integrações com bancos de dados relacionais e não relacionais</li>
-      <li>Otimização de processos através de software personalizado</li>
-      <li>Projetos sob medida para clientes e empresas</li>
-    </ul>
-    <div class="skills">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Python</div>
-      <div class="skill">C#</div>
-      <div class="skill">SQL</div>
+    <!-- Projeto 3 -->
+    <div class="project-card">
+      <h3>Projeto 3</h3>
+      <p>Descrição do projeto 3.</p>
     </div>
-  </section>
 
-  <!-- Projetos -->
-  <section id="projects" class="projects">
-    <h2>Projetos</h2>
-    <div class="project-grid">
+  </div>
+</section>
 
-      <!-- Projeto 1 -->
-      <div class="project-card">
-        <h3><strong>Chatbot para Captação de Leads</strong></h3>
-        <p>
-          Desenvolvimento de um chatbot simples para captura de nome, telefone, data e hora da interação. Os dados são exibidos em um dashboard protegido por login/senha e, ao final, o lead é redirecionado ao WhatsApp.
-        </p>
-        <p><strong>Stack:</strong><br>
-          • Frontend: HTML, CSS, JavaScript (GitHub Pages)<br>
-          • Backend: API em Python (Flask/FastAPI) + banco de dados (SQLite/PostgreSQL) — hospedado na Render
-        </p>
-      </div>
+<!-- Contato -->
+<section id="contact" class="contact">
+  <h2>Entre em Contato</h2>
+  <p>Você pode me encontrar nas redes abaixo ou enviar um e-mail diretamente.</p>
+  <div class="social">
+    <a href="mailto:nmdevtechbr@gmail.com" target="_blank">Email</a>
+    <a href="https://github.com/nmdevtch" target="_blank">GitHub</a>
+    <a href="https://www.instagram.com/dev.analyzer" target="_blank">Instagram</a>
+    <a href="https://wa.me/5541984842781" target="_blank">WhatsApp</a>
+  </div>
+</section>
 
-      <!-- Projeto 2 -->
-      <div class="project-card">
-        <h3>Projeto 2</h3>
-        <p>Descrição do projeto 2.</p>
-      </div>
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 Natã De Mattos. Todos os direitos reservados.</p>
+</footer>
 
-      <!-- Projeto 3 -->
-      <div class="project-card">
-        <h3>Projeto 3</h3>
-        <p>Descrição do projeto 3.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contact" class="contact">
-    <h2>Entre em Contato</h2>
-    <p>Você pode me encontrar nas redes abaixo ou enviar um e-mail diretamente.</p>
-    <div class="social">
-      <a href="mailto:nmdevtechbr@gmail.com" target="_blank">Email</a>
-      <a href="https://github.com/nmdevtch" target="_blank">GitHub</a>
-      <a href="https://www.instagram.com/dev.analyzer" target="_blank">Instagram</a>
-      <a href="https://wa.me/5541984842781" target="_blank">WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Natã De Mattos. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
